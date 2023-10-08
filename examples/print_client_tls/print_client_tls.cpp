@@ -27,8 +27,20 @@
 
 #include <websocketpp/config/asio_client.hpp>
 #include <websocketpp/client.hpp>
+#include <cstddef>
+#include <algorithm>
+#include <vector>
+#include <future>
 
 #include <iostream>
+#include <fstream>
+#include <boost/thread.hpp>   
+#include <boost/lockfree/spsc_queue.hpp>
+#include <rapidjson/document.h>
+#include <ByteBuffer.hpp>   
+#include <SubUnsub.hpp>   
+#include <publisher.cpp>   
+#include "prepareSubString.hpp"   
 
 typedef websocketpp::client<websocketpp::config::asio_tls_client> client;
 typedef websocketpp::lib::shared_ptr<websocketpp::lib::asio::ssl::context> context_ptr;
@@ -37,8 +49,51 @@ using websocketpp::lib::placeholders::_1;
 using websocketpp::lib::placeholders::_2;
 using websocketpp::lib::bind;
 
-void on_message(websocketpp::connection_hdl, client::message_ptr msg) {
-    std::cout << msg->get_payload() << std::endl;
+using namespace::std;
+client c;
+static int counter =0;
+int ack =0;
+bool niftyUnreal = false;
+boost::lockfree::spsc_queue<std::string> q{100};
+std::mutex m_mutex;
+std::condition_variable cv;
+bool ready = false;
+void on_message(websocketpp::connection_hdl hdl, client::message_ptr msg) {
+    websocketpp::lib::error_code ec;
+//    std::cout << msg->get_payload() << std::endl;
+    std::cout << "M" << std::endl;
+    ByteBuffer buf;
+    std::string payload = msg->get_payload();
+    buf.put(payload);
+    int packSize= buf.getLong(2);
+    int connectionType= buf.getLong(1);
+//    cout<<"packet size "<<packSize<<endl;
+//    cout<<"connect type  "<<connectionType<<endl;
+    if(connectionType == CONNECTION_TYPE){
+       ack = buf.parseAck();
+       cout<<"ack = "<<ack<<endl;
+    }
+    if(connectionType == DATA_TYPE){
+        ++counter;
+        auto messageNumber = buf.parseMessageNumber();
+ //           cout<<"ack  counter messagenumber "<<ack<<":"<<counter<<":"<<messageNumber<<endl;
+        if(counter == ack) {
+            auto messageNumberBuf = buf.getMessageBuf(messageNumber);
+//            cout<<"sending ack  "<<std::hex<<messageNumberBuf<<endl;
+            c.send(hdl, messageNumberBuf, websocketpp::frame::opcode::binary, ec);                    
+            if(ec) {
+               std::cout << "> Error sending message: " << ec.message() << std::endl;
+            }
+            counter=0 ;
+        }
+        if(niftyUnreal) {
+         std::string theData = buf.parseDataUnreal(&q); 
+         buf.storeSums();
+        } else {
+         std::string theData = buf.parseData(&q); 
+        }
+//        q.push(theData);
+    }
 }
 
 /// Verify that one of the subject alternative names matches the given hostname
@@ -176,7 +231,8 @@ bool verify_certificate(const char * hostname, bool preverified, boost::asio::ss
  * (websocketpp.org, for example).
  */
 context_ptr on_tls_init(const char * hostname, websocketpp::connection_hdl) {
-    context_ptr ctx = websocketpp::lib::make_shared<boost::asio::ssl::context>(boost::asio::ssl::context::sslv23);
+    context_ptr ctx = websocketpp::lib::make_shared<boost::asio::ssl::context>(boost::asio::ssl::context::tlsv12);
+    boost::system::error_code ec;
 
     try {
         ctx->set_options(boost::asio::ssl::context::default_workarounds |
@@ -184,36 +240,125 @@ context_ptr on_tls_init(const char * hostname, websocketpp::connection_hdl) {
                          boost::asio::ssl::context::no_sslv3 |
                          boost::asio::ssl::context::single_dh_use);
 
+        std::cout << "options done" << std::endl;
 
-        ctx->set_verify_mode(boost::asio::ssl::verify_peer);
+//        ctx->set_verify_mode(boost::asio::ssl::verify_peer);
+          ctx->set_verify_mode(boost::asio::ssl::verify_none);
+        std::cout << "verify done" << std::endl;
         ctx->set_verify_callback(bind(&verify_certificate, hostname, ::_1, ::_2));
+        std::cout << "verify callback done" << std::endl;
 
         // Here we load the CA certificates of all CA's that this client trusts.
-        ctx->load_verify_file("ca-chain.cert.pem");
+//        ctx->load_verify_file("ca-chain.cert.pem");
+        std::cout << "verify file done" << std::endl;
+       // ec = ctx->get_transport_ec();
+        if(ec) {
+	   std::cerr<<"Init tls failed,reason:"<< ec.message()<<std::endl;
+        } 
     } catch (std::exception& e) {
+        std::cout << "in exception" << std::endl;
         std::cout << e.what() << std::endl;
     }
     return ctx;
 }
 
-int main(int argc, char* argv[]) {
-    client c;
+const void runSocket(client* c) 
+{
+    std::cout << "run Socket "<< std::endl ;
+    c->run();
+}
 
-    std::string hostname = "localhost";
-    std::string port = "9002";
-
-
-    if (argc == 3) {
-        hostname = argv[1];
-        port = argv[2];
-    } else {
-        std::cout << "Usage: print_server_tls <hostname> <port>" << std::endl;
-        return 1;
+rapidjson::Document readJsonFile(istream& file) {
+   // ifstream file("example.json");
+  
+    // Read the entire file into a string
+    string json((istreambuf_iterator<char>(file)),
+                istreambuf_iterator<char>());
+  
+    // Create a Document object 
+      // to hold the JSON data
+    rapidjson::Document doc;
+  
+    // Parse the JSON data
+    //cout<<"the json string "<<json.c_str()<<endl;
+    doc.Parse(json.c_str());
+  
+    // Check for parse errors
+    if (doc.HasParseError()) {
+        cerr << "Error parsing JSON: "
+             << doc.GetParseError() << endl;
+        return doc;
     }
-    
-    std::string uri = "wss://" + hostname + ":" + port;
+  
+    // Now you can use the Document object to access the
+    // JSON data
+    return doc;
+}
+std::string  prepareConnectionRequest2(string a, string c) {
+        string src = "JS_API";
+        uint8_t connectionType = 1; 
+        uint8_t numberOfElements = 3; 
+        uint8_t ElementSeq_1 = 1; 
+        uint8_t ElementSeq_2 = 2; 
+        uint8_t ElementSeq_3 = 3; 
+        uint16_t srcLen = src.length();
+        uint16_t jwtLen = a.length();
+        uint16_t  redisLen = c.length();
+        ByteBuffer buffer;
+//        let buffer = new ByteData(srcLen + jwtLen + redisLen + 13);
+        uint16_t size= srcLen + jwtLen + redisLen + 11;
+//        buffer.markStartOfMsg();
+        buffer.addShort(size);
+//        buffer.put(size); // Size 2 byte Type = 1
+        buffer.put(connectionType);    // Connection Type = 1
+        buffer.put(numberOfElements);   // 3 element , should be 1 byte
+        buffer.put(ElementSeq_1); // first element 
+        buffer.addShort(jwtLen);
+        buffer.put(a);
+        buffer.put(ElementSeq_2);
+        buffer.addShort(redisLen);
+        buffer.put(c);
+        buffer.put(ElementSeq_3);
+        buffer.addShort(srcLen);
+        buffer.put(src);
+        return buffer.tostr();
+}
+
+void print_bytes(std::ostream& out, const char *title, const char *data, size_t dataLen, bool format = true) {
+    out << title << std::endl;
+    out << std::setfill('0');
+    for(size_t i = 0; i < dataLen; ++i) {
+        out << std::dec << std::setw(2) << std::bitset<8>(data[i]);
+//        out << std::dec<<std::setw(2)<< int(data[i]);
+        if (format) {
+            out << (((i + 1) % 16 == 0) ? "\n" : " ");
+        }
+    }
+    out << std::endl;
+}
+
+int main(int argc, char* argv[]) {
+//    client c;
+    cout<<"start setup" << endl;
+    ifstream jsonfile("./neo_s.json");
+    rapidjson::Document d;
+    d=readJsonFile(jsonfile);
+
+    std::string hostname = "lhsm.kotaksecurities.com";
+    std::string port = "443";
+
+    std::string uri = "wss://" + hostname; 
+   //  "wss://lhsi.kotaksecurities.com/realtime?sId="+handshakeServerId; order socket data address
+    if(argc > 1 && std::strcmp(argv[1], "niftyUnreal" ) == 0 ) {
+            cout<<"seting up niftyunreal" << endl;
+            niftyUnreal = true;
+    } 
+     
 
     try {
+       publisher p;
+       auto ft  = std::async(std::launch::async, publisher::connectTo, "nifty" , &q);
+     //   p.connectTo("nifty");
         // Set logging to be pretty verbose (everything except message payloads)
         c.set_access_channels(websocketpp::log::alevel::all);
         c.clear_access_channels(websocketpp::log::alevel::frame_payload);
@@ -242,8 +387,59 @@ int main(int argc, char* argv[]) {
         // Start the ASIO io_service run loop
         // this will cause a single connection to be made to the server. c.run()
         // will exit when this connection is closed.
-        c.run();
+        boost::thread t1(runSocket, &c);
+        string buf;
+        if(d.HasMember("data")) {
+          rapidjson::Value *config_node = &(d["data"]);
+//          cout<<(*config_node)["token"].GetString() ;
+//         cout<<(*config_node)["sid"].GetString() ;
+          buf = prepareConnectionRequest2((*config_node)["token"].GetString(),(*config_node)["sid"].GetString());
+//          cout<<"buf =["<<std::hex<<buf<<"]"<<endl;
+//          print_bytes(cout,"Buffer" ,buf.c_str(),buf.length()) ;
+           }  
+        boost::this_thread::sleep( boost::posix_time::seconds(1) );
+        c.send(con->get_handle(), buf, websocketpp::frame::opcode::binary, ec);
+        boost::this_thread::sleep( boost::posix_time::seconds(2) );
+        // subscriber 
+        const string index="if";
+        const string scrip="sf";
+        uint8_t subsType4 = 4;
+        uint8_t snapShotType9 = 9;
+        int channel = 1;
+        SubscribeRequest s;
+//        string bufsub = s.prepareSubsUnSubsRequest(scrip_index, subsType4, index, channel); // index=if and  line 405
+        if(niftyUnreal) {
+            cout<<"setting unreal"<<endl;
+            // TCS  INFOSYS TataMOTORS  NTPC  
+            string scrip_index = "nse_cm|11536&nse_cm|1594&nse_cm|3456&nse_cm|11630";
+            scrip_index += "&nse_cm|16675"; // Bajaj finserver
+            scrip_index += "&nse_cm|526"; // Bharat petroleum 
+            prepareSubString p ;
+            scrip_index = p.prepareSubscription();
+            auto ft  = std::async(std::launch::async, publisher::snapShots, scrip_index, snapShotType9, scrip, channel, con);
+            string bufsub = s.prepareSubsUnSubsRequest(scrip_index, snapShotType9, scrip, channel); // scrip and line 406
+            c.send(con->get_handle(), bufsub, websocketpp::frame::opcode::binary, ec);
+        }
+        else {
+            string scrip_index = "nse_fo|35048";
+            string bufsub = s.prepareSubsUnSubsRequest(scrip_index, subsType4, scrip, channel); // scrip and line 406
+            c.send(con->get_handle(), bufsub, websocketpp::frame::opcode::binary, ec);
+
+            scrip_index = "nse_cm|Nifty 50";
+            bufsub = s.prepareSubsUnSubsRequest(scrip_index, subsType4, index, channel); // scrip and line 406
+            c.send(con->get_handle(), bufsub, websocketpp::frame::opcode::binary, ec);
+            if (ec) {
+             std::cout << "> Error sending message: " << ec.message() << std::endl;
+             return 0;
+            }   
+        } 
+//        print_bytes(cout,"SubRequest" ,bufsub.c_str(),bufsub.length()) ;
+//        cout<<"SubRequest =["<<std::hex<<bufsub<<"]"<<endl;
+        //subscriber ends
+        t1.join();
+//        c.run();
     } catch (websocketpp::exception const & e) {
         std::cout << e.what() << std::endl;
     }
+
 }

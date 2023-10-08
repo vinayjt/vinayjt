@@ -1,0 +1,8 @@
+awk 'NR > 1 {
+   for (i=3; i<=7; ++i)
+      $i -= a[i]
+   print
+}
+{
+   split($0,a)
+}'  

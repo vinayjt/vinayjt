@@ -1,0 +1,1517 @@
+start setup
+seting up niftyunreal
+Connecting to tcp://127.0.0.1:62270
+options done
+verify done
+verify callback done
+verify file done
+[2023-09-28 21:51:33] [application] Connecting to wss://lhsm.kotaksecurities.com
+run Socket 
+[2023-09-28 21:51:33] [connect] Successful connection
+[2023-09-28 21:51:33] [connect] WebSocket Connection 14.142.22.82:443 v-2 "WebSocket++/0.8.2" / 101
+[2023-09-28 21:51:34] [frame_header] Dispatching write containing 1 message(s) containing 8 header bytes and 754 payload bytes
+[2023-09-28 21:51:34] [frame_header] Header Bytes: 
+[0] (8) 82 FE 02 F2 6F 9C 08 B7 
+
+M
+fcount 2
+fid 1
+status K
+fid 2
+length 2
+ack = 5
+setting unreal
+[2023-09-28 21:51:36] [frame_header] Dispatching write containing 1 message(s) containing 8 header bytes and 768 payload bytes
+[2023-09-28 21:51:36] [frame_header] Header Bytes: 
+[0] (8) 82 FE 03 00 80 62 E3 B1 
+
+M
+M
+SNAP count and all 25 42 sf|nse_cm|5258
+fvalue = 256667
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896803
+fvalue = 5876746
+fvalue = 141300
+fvalue = 1
+fvalue = 0
+fvalue = 5876746,1413.000000,0,2448, fcount = 16
+fvalue = 2448
+fvalue = 0
+fvalue = 141300
+fvalue = 0
+fvalue = 2448
+fvalue = 142362
+fvalue = 140945
+fvalue = 144535
+fvalue = 127170
+fvalue = 155430
+fvalue = 147565
+fvalue = 99000
+fvalue = 143700
+fvalue = 143645
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 5876746,1413.000000,0,2448,
+len = 4fid  = 52 str = 5258
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = INDUSINDBK-EQ
+SNAP count and all 25 8 sf|nse_cm|4963
+fvalue = 289581
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896960
+fvalue = 25991282
+fvalue = 94260
+fvalue = 1
+fvalue = 15740
+fvalue = 25991282,942.600000,15740,0, fcount = 16
+fvalue = 0
+fvalue = 94260
+fvalue = 0
+fvalue = 15740
+fvalue = 0
+fvalue = 94064
+fvalue = 93475
+fvalue = 94725
+fvalue = 84835
+fvalue = 103685
+fvalue = 100870
+fvalue = 79600
+fvalue = 94550
+fvalue = 94310
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 25991282,942.600000,15740,0,
+len = 4fid  = 52 str = 4963
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = ICICIBANK-EQ
+SNAP count and all 25 41 sf|nse_cm|3432
+fvalue = 180071
+fvalue = 72255458
+fvalue = 1695911655
+fvalue = 1695896922
+fvalue = 1801983
+fvalue = 87650
+fvalue = 2
+fvalue = 0
+fvalue = 1801983,876.500000,0,13617, fcount = 16
+fvalue = 13617
+fvalue = 0
+fvalue = 87650
+fvalue = 0
+fvalue = 13617
+fvalue = 88081
+fvalue = 87010
+fvalue = 89600
+fvalue = 78885
+fvalue = 96415
+fvalue = 90990
+fvalue = 68660
+fvalue = 89480
+fvalue = 88885
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1801983,876.500000,0,13617,
+len = 4fid  = 52 str = 3432
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = TATACONSUM-EQ
+SNAP count and all 25 22 sf|nse_cm|910
+fvalue = 217878
+fvalue = 72073385
+fvalue = 1695911473
+fvalue = 1695896408
+fvalue = 608162
+fvalue = 344025
+fvalue = 12
+fvalue = 510
+fvalue = 608162,3440.250000,510,0, fcount = 16
+fvalue = 0
+fvalue = 344025
+fvalue = 0
+fvalue = 510
+fvalue = 0
+fvalue = 346392
+fvalue = 342500
+fvalue = 350000
+fvalue = 309625
+fvalue = 378425
+fvalue = 388965
+fvalue = 283600
+fvalue = 348000
+fvalue = 347970
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 608162,3440.250000,510,0,
+len = 3fid  = 52 str = 910
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = EICHERMOT-EQ
+SNAP count and all 25 7 sf|nse_cm|10604
+fvalue = 230944
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896583
+fvalue = 7386917
+fvalue = 92565
+fvalue = 1
+fvalue = 1161
+fvalue = 7386917,925.650000,1161,0, fcount = 16
+fvalue = 0
+fvalue = 92565
+fvalue = 0
+fvalue = 1161
+fvalue = 0
+fvalue = 92267
+fvalue = 91860
+fvalue = 93200
+fvalue = 83310
+fvalue = 101820
+fvalue = 94870
+fvalue = 73580
+fvalue = 92600
+fvalue = 92025
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 7386917,925.650000,1161,0,
+len = 5fid  = 52 str = 10604
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = BHARTIARTL-EQ
+SNAP count and all 25 27 sf|nse_cm|20374
+fvalue = 199527
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896858
+fvalue = 12432497
+fvalue = 29020
+fvalue = 1
+fvalue = 158930
+fvalue = 12432497,290.200000,158930,0, fcount = 16
+fvalue = 0
+fvalue = 29020
+fvalue = 0
+fvalue = 158930
+fvalue = 0
+fvalue = 29124
+fvalue = 28900
+fvalue = 29415
+fvalue = 26120
+fvalue = 31920
+fvalue = 29415
+fvalue = 20760
+fvalue = 29155
+fvalue = 29155
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 12432497,290.200000,158930,0,
+len = 5fid  = 52 str = 20374
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = COALINDIA-EQ
+SNAP count and all 25 39 sf|nse_cm|317
+fvalue = 230649
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896945
+fvalue = 777505
+fvalue = 773900
+fvalue = 10
+fvalue = 0
+fvalue = 777505,7739.000000,0,88, fcount = 16
+fvalue = 88
+fvalue = 0
+fvalue = 773900
+fvalue = 0
+fvalue = 88
+fvalue = 777449
+fvalue = 771805
+fvalue = 782900
+fvalue = 696510
+fvalue = 851290
+fvalue = 799990
+fvalue = 548570
+fvalue = 780475
+fvalue = 783755
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 777505,7739.000000,0,88,
+len = 3fid  = 52 str = 317
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = BAJFINANCE-EQ
+SNAP count and all 25 6 sf|nse_cm|1333
+fvalue = 297666
+fvalue = 72080588
+fvalue = 1695911480
+fvalue = 1695896978
+fvalue = 27677094
+fvalue = 152370
+fvalue = 1
+fvalue = 0
+fvalue = 27677094,1523.700000,0,30402, fcount = 16
+fvalue = 30402
+fvalue = 0
+fvalue = 152370
+fvalue = 0
+fvalue = 30402
+fvalue = 152660
+fvalue = 151835
+fvalue = 153760
+fvalue = 137135
+fvalue = 167605
+fvalue = 175750
+fvalue = 136500
+fvalue = 153400
+fvalue = 152685
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 27677094,1523.700000,0,30402,
+len = 4fid  = 52 str = 1333
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = HDFCBANK-EQ
+SNAP count and all 25 35 sf|nse_cm|236
+fvalue = 263280
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896808
+fvalue = 2104381
+fvalue = 317035
+fvalue = 2
+fvalue = 1866
+fvalue = 2104381,3170.350000,1866,0, fcount = 16
+fvalue = 0
+fvalue = 317035
+fvalue = 0
+fvalue = 1866
+fvalue = 0
+fvalue = 319612
+fvalue = 315500
+fvalue = 328900
+fvalue = 285335
+fvalue = 348735
+fvalue = 358290
+fvalue = 268585
+fvalue = 328180
+fvalue = 330180
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 2104381,3170.350000,1866,0,
+len = 3fid  = 52 str = 236
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = ASIANPAINT-EQ
+SNAP count and all 25 0 sf|nse_cm|11536
+fvalue = 271202
+fvalue = 72255458
+fvalue = 1695911655
+fvalue = 1695896933
+fvalue = 1755753
+fvalue = 353675
+fvalue = 17
+fvalue = 634
+fvalue = 1755753,3536.750000,634,0, fcount = 16
+fvalue = 0
+fvalue = 353675
+fvalue = 0
+fvalue = 634
+fvalue = 0
+fvalue = 355809
+fvalue = 352735
+fvalue = 360280
+fvalue = 318310
+fvalue = 389040
+fvalue = 363375
+fvalue = 292610
+fvalue = 360000
+fvalue = 358930
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1755753,3536.750000,634,0,
+len = 5fid  = 52 str = 11536
+len = 6fid  = 53 str = nse_cm
+len = 6fid  = 54 str = TCS-EQ
+SNAP count and all 25 26 sf|nse_cm|11532
+fvalue = 219819
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896943
+fvalue = 370431
+fvalue = 815435
+fvalue = 1
+fvalue = 0
+fvalue = 370431,8154.350000,0,199, fcount = 16
+fvalue = 199
+fvalue = 0
+fvalue = 815435
+fvalue = 0
+fvalue = 199
+fvalue = 820826
+fvalue = 813400
+fvalue = 832395
+fvalue = 733895
+fvalue = 896975
+fvalue = 875095
+fvalue = 600500
+fvalue = 826480
+fvalue = 826270
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 370431,8154.350000,0,199,
+len = 5fid  = 52 str = 11532
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = ULTRACEMCO-EQ
+SNAP count and all 25 24 sf|nse_cm|3787
+fvalue = 247875
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896899
+fvalue = 8438058
+fvalue = 40535
+fvalue = 10
+fvalue = 2927
+fvalue = 8438058,405.350000,2927,0, fcount = 16
+fvalue = 0
+fvalue = 40535
+fvalue = 0
+fvalue = 2927
+fvalue = 0
+fvalue = 40835
+fvalue = 40400
+fvalue = 41650
+fvalue = 36485
+fvalue = 44585
+fvalue = 44375
+fvalue = 35200
+fvalue = 41650
+fvalue = 41565
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 8438058,405.350000,2927,0,
+len = 4fid  = 52 str = 3787
+len = 6fid  = 53 str = nse_cm
+len = 8fid  = 54 str = WIPRO-EQ
+SNAP count and all 25 33 sf|nse_cm|157
+fvalue = 174553
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896239
+fvalue = 407714
+fvalue = 502010
+fvalue = 154
+fvalue = 49
+fvalue = 407714,5020.100000,49,0, fcount = 16
+fvalue = 0
+fvalue = 502010
+fvalue = 0
+fvalue = 49
+fvalue = 0
+fvalue = 507945
+fvalue = 499500
+fvalue = 514550
+fvalue = 451810
+fvalue = 552210
+fvalue = 536400
+fvalue = 412300
+fvalue = 510535
+fvalue = 510535
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 407714,5020.100000,49,0,
+len = 3fid  = 52 str = 157
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = APOLLOHOSP-EQ
+SNAP count and all 25 40 sf|nse_cm|547
+fvalue = 210129
+fvalue = 72073385
+fvalue = 1695911473
+fvalue = 1695896550
+fvalue = 390490
+fvalue = 452455
+fvalue = 1
+fvalue = 63
+fvalue = 390490,4524.550000,63,0, fcount = 16
+fvalue = 0
+fvalue = 452455
+fvalue = 0
+fvalue = 63
+fvalue = 0
+fvalue = 455401
+fvalue = 450505
+fvalue = 463430
+fvalue = 407210
+fvalue = 497700
+fvalue = 527035
+fvalue = 369000
+fvalue = 462735
+fvalue = 462735
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 390490,4524.550000,63,0,
+len = 3fid  = 52 str = 547
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = BRITANNIA-EQ
+SNAP count and all 25 48 sf|nse_cm|467
+fvalue = 241084
+fvalue = 70792476
+fvalue = 1695910192
+fvalue = 1695896898
+fvalue = 2418577
+fvalue = 63470
+fvalue = 54
+fvalue = 358
+fvalue = 2418577,634.700000,358,0, fcount = 16
+fvalue = 0
+fvalue = 63470
+fvalue = 0
+fvalue = 358
+fvalue = 0
+fvalue = 64044
+fvalue = 63335
+fvalue = 65065
+fvalue = 57125
+fvalue = 69815
+fvalue = 69085
+fvalue = 45780
+fvalue = 64520
+fvalue = 64820
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 2418577,634.700000,358,0,
+len = 3fid  = 52 str = 467
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = HDFCLIFE-EQ
+SNAP count and all 25 47 sf|nse_cm|1363
+fvalue = 207276
+fvalue = 72080588
+fvalue = 1695911480
+fvalue = 1695896007
+fvalue = 5869780
+fvalue = 46685
+fvalue = 1
+fvalue = 811
+fvalue = 5869780,466.850000,811,0, fcount = 16
+fvalue = 0
+fvalue = 46685
+fvalue = 0
+fvalue = 811
+fvalue = 0
+fvalue = 47315
+fvalue = 46445
+fvalue = 47960
+fvalue = 42020
+fvalue = 51350
+fvalue = 50890
+fvalue = 35880
+fvalue = 47600
+fvalue = 47495
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 5869780,466.850000,811,0,
+len = 4fid  = 52 str = 1363
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = HINDALCO-EQ
+SNAP count and all 25 23 sf|nse_cm|17963
+fvalue = 153000
+fvalue = 72075386
+fvalue = 1695911475
+fvalue = 1695896721
+fvalue = 51981
+fvalue = 2253845
+fvalue = 1
+fvalue = 0
+fvalue = 51981,22538.450000,0,0, fcount = 16
+fvalue = 0
+fvalue = 0
+fvalue = 0
+fvalue = 0
+fvalue = 0
+fvalue = 2263171
+fvalue = 2244780
+fvalue = 2290795
+fvalue = 2028460
+fvalue = 2479225
+fvalue = 2339535
+fvalue = 1788000
+fvalue = 2290000
+fvalue = 2287300
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 51981,22538.450000,0,0,
+len = 5fid  = 52 str = 17963
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = NESTLEIND-EQ
+SNAP count and all 25 11 sf|nse_cm|7229
+fvalue = 264570
+fvalue = 72080588
+fvalue = 1695911480
+fvalue = 1695896783
+fvalue = 1807072
+fvalue = 124190
+fvalue = 3
+fvalue = 0
+fvalue = 1807072,1241.900000,0,9, fcount = 16
+fvalue = 9
+fvalue = 0
+fvalue = 124190
+fvalue = 0
+fvalue = 9
+fvalue = 124821
+fvalue = 123855
+fvalue = 126600
+fvalue = 111775
+fvalue = 136605
+fvalue = 131130
+fvalue = 88200
+fvalue = 126110
+fvalue = 126110
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1807072,1241.900000,0,9,
+len = 4fid  = 52 str = 7229
+len = 6fid  = 53 str = nse_cm
+len = 10fid  = 54 str = HCLTECH-EQ
+SNAP count and all 25 4 sf|nse_cm|16675
+fvalue = 203454
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896968
+fvalue = 831496
+fvalue = 153970
+fvalue = 2
+fvalue = 201
+fvalue = 831496,1539.700000,201,0, fcount = 16
+fvalue = 0
+fvalue = 153970
+fvalue = 0
+fvalue = 201
+fvalue = 0
+fvalue = 154980
+fvalue = 153505
+fvalue = 157495
+fvalue = 138575
+fvalue = 169365
+fvalue = 181790
+fvalue = 121500
+fvalue = 156500
+fvalue = 156575
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 831496,1539.700000,201,0,
+len = 5fid  = 52 str = 16675
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = BAJAJFINSV-EQ
+SNAP count and all 25 43 sf|nse_cm|14977
+fvalue = 218958
+fvalue = 72255458
+fvalue = 1695911655
+fvalue = 1695896904
+fvalue = 50185120
+fvalue = 20075
+fvalue = 2672
+fvalue = 0
+fvalue = 50185120,200.750000,0,115191, fcount = 16
+fvalue = 115191
+fvalue = 0
+fvalue = 20075
+fvalue = 0
+fvalue = 115191
+fvalue = 20049
+fvalue = 19780
+fvalue = 20445
+fvalue = 18070
+fvalue = 22080
+fvalue = 26700
+fvalue = 18635
+fvalue = 20010
+fvalue = 19935
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 50185120,200.750000,0,115191,
+len = 5fid  = 52 str = 14977
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = POWERGRID-EQ
+SNAP count and all 25 37 sf|nse_cm|1922
+fvalue = 288042
+fvalue = 72080588
+fvalue = 1695911480
+fvalue = 1695896984
+fvalue = 8263197
+fvalue = 173320
+fvalue = 50
+fvalue = 0
+fvalue = 8263197,1733.200000,0,408, fcount = 16
+fvalue = 408
+fvalue = 0
+fvalue = 173320
+fvalue = 0
+fvalue = 408
+fvalue = 174165
+fvalue = 172900
+fvalue = 177190
+fvalue = 155990
+fvalue = 190650
+fvalue = 206440
+fvalue = 164350
+fvalue = 176220
+fvalue = 176515
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 8263197,1733.200000,0,408,
+len = 4fid  = 52 str = 1922
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = KOTAKBANK-EQ
+SNAP count and all 25 45 sf|nse_cm|3506
+fvalue = 263072
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896888
+fvalue = 1214383
+fvalue = 315725
+fvalue = 54
+fvalue = 3104
+fvalue = 1214383,3157.250000,3104,0, fcount = 16
+fvalue = 0
+fvalue = 315725
+fvalue = 0
+fvalue = 3104
+fvalue = 0
+fvalue = 317358
+fvalue = 314175
+fvalue = 322490
+fvalue = 284155
+fvalue = 347295
+fvalue = 335200
+fvalue = 226960
+fvalue = 321750
+fvalue = 321455
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1214383,3157.250000,3104,0,
+len = 4fid  = 52 str = 3506
+len = 6fid  = 53 str = nse_cm
+len = 8fid  = 54 str = TITAN-EQ
+SNAP count and all 25 34 sf|nse_cm|1394
+fvalue = 235809
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896717
+fvalue = 1612346
+fvalue = 246035
+fvalue = 10
+fvalue = 416
+fvalue = 1612346,2460.350000,416,0, fcount = 16
+fvalue = 0
+fvalue = 246035
+fvalue = 0
+fvalue = 416
+fvalue = 0
+fvalue = 246939
+fvalue = 245320
+fvalue = 250100
+fvalue = 221435
+fvalue = 270635
+fvalue = 276965
+fvalue = 239300
+fvalue = 250000
+fvalue = 250175
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1612346,2460.350000,416,0,
+len = 4fid  = 52 str = 1394
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = HINDUNILVR-EQ
+SNAP count and all 25 30 sf|nse_cm|3499
+fvalue = 289302
+fvalue = 72075386
+fvalue = 1695911475
+fvalue = 1695896957
+fvalue = 29982233
+fvalue = 12680
+fvalue = 10
+fvalue = 48135
+fvalue = 29982233,126.800000,48135,0, fcount = 16
+fvalue = 0
+fvalue = 12680
+fvalue = 0
+fvalue = 48135
+fvalue = 0
+fvalue = 12768
+fvalue = 12630
+fvalue = 12930
+fvalue = 11415
+fvalue = 13945
+fvalue = 13500
+fvalue = 9500
+fvalue = 12835
+fvalue = 12815
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 29982233,126.800000,48135,0,
+len = 4fid  = 52 str = 3499
+len = 6fid  = 53 str = nse_cm
+len = 12fid  = 54 str = TATASTEEL-EQ
+SNAP count and all 25 2 sf|nse_cm|3456
+fvalue = 288681
+fvalue = 72255458
+fvalue = 1695911655
+fvalue = 1695896870
+fvalue = 6768196
+fvalue = 61410
+fvalue = 4
+fvalue = 9920
+fvalue = 6768196,614.100000,9920,0, fcount = 16
+fvalue = 0
+fvalue = 61410
+fvalue = 0
+fvalue = 9920
+fvalue = 0
+fvalue = 61793
+fvalue = 61225
+fvalue = 62380
+fvalue = 55270
+fvalue = 67550
+fvalue = 66540
+fvalue = 37520
+fvalue = 62290
+fvalue = 62015
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 6768196,614.100000,9920,0,
+len = 4fid  = 52 str = 3456
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = TATAMOTORS-EQ
+SNAP count and all 25 13 sf|nse_cm|2885
+fvalue = 310671
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896872
+fvalue = 7259173
+fvalue = 233410
+fvalue = 19
+fvalue = 5092
+fvalue = 7259173,2334.100000,5092,0, fcount = 16
+fvalue = 0
+fvalue = 233410
+fvalue = 0
+fvalue = 5092
+fvalue = 0
+fvalue = 235203
+fvalue = 232500
+fvalue = 238300
+fvalue = 210070
+fvalue = 256750
+fvalue = 263095
+fvalue = 232500
+fvalue = 238300
+fvalue = 236890
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 7259173,2334.100000,5092,0,
+len = 4fid  = 52 str = 2885
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = RELIANCE-EQ
+SNAP count and all 25 32 sf|nse_cm|694
+fvalue = 221994
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896613
+fvalue = 1303811
+fvalue = 116405
+fvalue = 1
+fvalue = 0
+fvalue = 1303811,1164.050000,0,515, fcount = 16
+fvalue = 515
+fvalue = 0
+fvalue = 116405
+fvalue = 0
+fvalue = 515
+fvalue = 116809
+fvalue = 115890
+fvalue = 118500
+fvalue = 104765
+fvalue = 128045
+fvalue = 127790
+fvalue = 85200
+fvalue = 118050
+fvalue = 118050
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1303811,1164.050000,0,515,
+len = 3fid  = 52 str = 694
+len = 6fid  = 53 str = nse_cm
+len = 8fid  = 54 str = CIPLA-EQ
+SNAP count and all 25 21 sf|nse_cm|25
+fvalue = 229230
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896914
+fvalue = 2225560
+fvalue = 247525
+fvalue = 30
+fvalue = 0
+fvalue = 2225560,2475.250000,0,138, fcount = 16
+fvalue = 138
+fvalue = 0
+fvalue = 247525
+fvalue = 0
+fvalue = 138
+fvalue = 247859
+fvalue = 244670
+fvalue = 251100
+fvalue = 222775
+fvalue = 272275
+fvalue = 419000
+fvalue = 101745
+fvalue = 248995
+fvalue = 248330
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 2225560,2475.250000,0,138,
+len = 2fid  = 52 str = 25
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = ADANIENT-EQ
+SNAP count and all 25 46 sf|nse_cm|15083
+fvalue = 215121
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896686
+fvalue = 5057959
+fvalue = 82310
+fvalue = 9
+fvalue = 25272
+fvalue = 5057959,823.100000,25272,0, fcount = 16
+fvalue = 0
+fvalue = 82310
+fvalue = 0
+fvalue = 25272
+fvalue = 0
+fvalue = 82890
+fvalue = 81915
+fvalue = 84135
+fvalue = 74080
+fvalue = 90540
+fvalue = 91600
+fvalue = 39510
+fvalue = 83325
+fvalue = 83070
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 5057959,823.100000,25272,0,
+len = 5fid  = 52 str = 15083
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = ADANIPORTS-EQ
+SNAP count and all 25 1 sf|nse_cm|1594
+fvalue = 275805
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896910
+fvalue = 5814602
+fvalue = 143945
+fvalue = 50
+fvalue = 51438
+fvalue = 5814602,1439.450000,51438,0, fcount = 16
+fvalue = 0
+fvalue = 143945
+fvalue = 0
+fvalue = 51438
+fvalue = 0
+fvalue = 144856
+fvalue = 143500
+fvalue = 147260
+fvalue = 129550
+fvalue = 158335
+fvalue = 167260
+fvalue = 118530
+fvalue = 146790
+fvalue = 146700
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 5814602,1439.450000,51438,0,
+len = 4fid  = 52 str = 1594
+len = 6fid  = 53 str = nse_cm
+len = 7fid  = 54 str = INFY-EQ
+SNAP count and all 25 18 sf|nse_cm|21808
+fvalue = 226229
+fvalue = 72080588
+fvalue = 1695911480
+fvalue = 1695896674
+fvalue = 1026081
+fvalue = 128940
+fvalue = 15
+fvalue = 1487
+fvalue = 1026081,1289.400000,1487,0, fcount = 16
+fvalue = 0
+fvalue = 128940
+fvalue = 0
+fvalue = 1487
+fvalue = 0
+fvalue = 129669
+fvalue = 128450
+fvalue = 130850
+fvalue = 116050
+fvalue = 141830
+fvalue = 139300
+fvalue = 105400
+fvalue = 130100
+fvalue = 130100
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 1026081,1289.400000,1487,0,
+len = 5fid  = 52 str = 21808
+len = 6fid  = 53 str = nse_cm
+len = 10fid  = 54 str = SBILIFE-EQ
+SNAP count and all 25 14 sf|nse_cm|1232
+fvalue = 206124
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896735
+fvalue = 723860
+fvalue = 190650
+fvalue = 4
+fvalue = 218
+fvalue = 723860,1906.500000,218,0, fcount = 16
+fvalue = 0
+fvalue = 190650
+fvalue = 0
+fvalue = 218
+fvalue = 0
+fvalue = 191526
+fvalue = 189660
+fvalue = 193795
+fvalue = 171585
+fvalue = 209715
+fvalue = 198810
+fvalue = 152705
+fvalue = 193000
+fvalue = 193110
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 723860,1906.500000,218,0,
+len = 4fid  = 52 str = 1232
+len = 6fid  = 53 str = nse_cm
+len = 9fid  = 54 str = GRASIM-EQ
+SNAP count and all 25 28 sf|nse_cm|17818
+fvalue = 213767
+fvalue = 70793276
+fvalue = 1695910193
+fvalue = 1695895945
+fvalue = 484805
+fvalue = 526490
+fvalue = 20
+fvalue = 150
+fvalue = 484805,5264.900000,150,0, fcount = 16
+fvalue = 0
+fvalue = 526490
+fvalue = 0
+fvalue = 150
+fvalue = 0
+fvalue = 530021
+fvalue = 521810
+fvalue = 546200
+fvalue = 473845
+fvalue = 579135
+fvalue = 559340
+fvalue = 412100
+fvalue = 546200
+fvalue = 543690
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 484805,5264.900000,150,0,
+len = 5fid  = 52 str = 17818
+len = 6fid  = 53 str = nse_cm
+len = 7fid  = 54 str = LTIM-EQ
+SNAP count and all 25 49 sf|nse_cm|10940
+fvalue = 200025
+fvalue = 70792476
+fvalue = 1695910192
+fvalue = 1695896309
+fvalue = 347090
+fvalue = 366500
+fvalue = 3
+fvalue = 131
+fvalue = 347090,3665.000000,131,0, fcount = 16
+fvalue = 0
+fvalue = 366500
+fvalue = 0
+fvalue = 131
+fvalue = 0
+fvalue = 371124
+fvalue = 365100
+fvalue = 379995
+fvalue = 329850
+fvalue = 403150
+fvalue = 393470
+fvalue = 273000
+fvalue = 377820
+fvalue = 376800
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 347090,3665.000000,131,0,
+len = 5fid  = 52 str = 10940
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = DIVISLAB-EQ
+SNAP count and all 25 15 sf|nse_cm|13538
+fvalue = 297956
+fvalue = 72255458
+fvalue = 1695911655
+fvalue = 1695896950
+fvalue = 6570797
+fvalue = 122950
+fvalue = 1
+fvalue = 458
+fvalue = 6570797,1229.500000,458,0, fcount = 16
+fvalue = 0
+fvalue = 122950
+fvalue = 0
+fvalue = 458
+fvalue = 0
+fvalue = 124018
+fvalue = 122200
+fvalue = 127405
+fvalue = 110655
+fvalue = 135245
+fvalue = 132000
+fvalue = 98105
+fvalue = 127405
+fvalue = 128865
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 6570797,1229.500000,458,0,
+len = 5fid  = 52 str = 13538
+len = 6fid  = 53 str = nse_cm
+len = 8fid  = 54 str = TECHM-EQ
+SNAP count and all 25 20 sf|nse_cm|3045
+fvalue = 320073
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896970
+fvalue = 21960816
+fvalue = 58995
+fvalue = 100
+fvalue = 16204
+fvalue = 21960816,589.950000,16204,0, fcount = 16
+fvalue = 0
+fvalue = 58995
+fvalue = 0
+fvalue = 16204
+fvalue = 0
+fvalue = 59136
+fvalue = 58885
+fvalue = 59520
+fvalue = 53095
+fvalue = 64890
+fvalue = 62955
+fvalue = 49935
+fvalue = 59125
+fvalue = 58975
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 21960816,589.950000,16204,0,
+len = 4fid  = 52 str = 3045
+len = 6fid  = 53 str = nse_cm
+len = 7fid  = 54 str = SBIN-EQ
+SNAP count and all 25 17 sf|nse_cm|881
+fvalue = 196842
+fvalue = 72076586
+fvalue = 1695911476
+fvalue = 1695896884
+fvalue = 386311
+fvalue = 542910
+fvalue = 4
+fvalue = 128
+fvalue = 386311,5429.100000,128,0, fcount = 16
+fvalue = 0
+fvalue = 542910
+fvalue = 0
+fvalue = 128
+fvalue = 0
+fvalue = 545909
+fvalue = 541100
+fvalue = 550745
+fvalue = 488620
+fvalue = 597200
+fvalue = 598970
+fvalue = 408930
+fvalue = 550745
+fvalue = 549645
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 386311,5429.100000,128,0,
+len = 3fid  = 52 str = 881
+len = 6fid  = 53 str = nse_cm
+len = 10fid  = 54 str = DRREDDY-EQ
+SNAP count and all 25 44 sf|nse_cm|2475
+fvalue = 173769
+fvalue = 69705267
+fvalue = 1695909105
+fvalue = 1695896993
+fvalue = 14890642
+fvalue = 18745
+fvalue = 1
+fvalue = 66114
+fvalue = 14890642,187.450000,66114,0, fcount = 16
+fvalue = 0
+fvalue = 18745
+fvalue = 0
+fvalue = 66114
+fvalue = 0
+fvalue = 18774
+fvalue = 18650
+fvalue = 18950
+fvalue = 16870
+fvalue = 20615
+fvalue = 19170
+fvalue = 12150
+fvalue = 18890
+fvalue = 18725
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 14890642,187.450000,66114,0,
+len = 4fid  = 52 str = 2475
+len = 6fid  = 53 str = nse_cm
+len = 7fid  = 54 str = ONGC-EQ
+SNAP count and all 25 12 sf|nse_cm|5900
+fvalue = 269196
+fvalue = 72082588
+fvalue = 1695911482
+fvalue = 1695896653
+fvalue = 15818489
+fvalue = 103090
+fvalue = 1
+fvalue = 0
+fvalue = 15818489,1030.900000,0,9000, fcount = 16
+fvalue = 9000
+fvalue = 0
+fvalue = 103090
+fvalue = 0
+fvalue = 9000
+fvalue = 103083
+fvalue = 102520
+fvalue = 103795
+fvalue = 92785
+fvalue = 113395
+fvalue = 104750
+fvalue = 70770
+fvalue = 102700
+fvalue = 102520
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 15818489,1030.900000,0,9000,
+len = 4fid  = 52 str = 5900
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = AXISBANK-EQ
+SNAP count and all 25 3 sf|nse_cm|11630
+fvalue = 199107
+fvalue = 72075386
+fvalue = 1695911475
+fvalue = 1695896232
+fvalue = 32887087
+fvalue = 23705
+fvalue = 32
+fvalue = 174097
+fvalue = 32887087,237.050000,174097,0, fcount = 16
+fvalue = 0
+fvalue = 23705
+fvalue = 0
+fvalue = 174097
+fvalue = 0
+fvalue = 23766
+fvalue = 23565
+fvalue = 24120
+fvalue = 21335
+fvalue = 26075
+fvalue = 24600
+fvalue = 15500
+fvalue = 23960
+fvalue = 23930
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 32887087,237.050000,174097,0,
+len = 5fid  = 52 str = 11630
+len = 6fid  = 53 str = nse_cm
+len = 7fid  = 54 str = NTPC-EQ
+SNAP count and all 25 5 sf|nse_cm|526
+fvalue = 152304
+fvalue = 72253457
+fvalue = 1695911653
+fvalue = 1695896505
+fvalue = 4850989
+fvalue = 34395
+fvalue = 50
+fvalue = 2897
+fvalue = 4850989,343.950000,2897,0, fcount = 16
+fvalue = 0
+fvalue = 34395
+fvalue = 0
+fvalue = 2897
+fvalue = 0
+fvalue = 34562
+fvalue = 34200
+fvalue = 35000
+fvalue = 30955
+fvalue = 37830
+fvalue = 39790
+fvalue = 28805
+fvalue = 34705
+fvalue = 34900
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 4850989,343.950000,2897,0,
+len = 3fid  = 52 str = 526
+len = 6fid  = 53 str = nse_cm
+len = 7fid  = 54 str = BPCL-EQ
+SNAP count and all 25 10 sf|nse_cm|2031
+fvalue = 264293
+fvalue = 72076586
+fvalue = 1695911476
+fvalue = 1695896959
+fvalue = 2369699
+fvalue = 155605
+fvalue = 700
+fvalue = 5612
+fvalue = 2369699,1556.050000,5612,0, fcount = 16
+fvalue = 0
+fvalue = 155605
+fvalue = 0
+fvalue = 5612
+fvalue = 0
+fvalue = 156361
+fvalue = 154400
+fvalue = 159690
+fvalue = 140045
+fvalue = 171165
+fvalue = 167000
+fvalue = 112340
+fvalue = 159595
+fvalue = 158920
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 2369699,1556.050000,5612,0,
+len = 4fid  = 52 str = 2031
+len = 6fid  = 53 str = nse_cm
+len = 6fid  = 54 str = M&M-EQ
+SNAP count and all 25 36 sf|nse_cm|1660
+fvalue = 242622
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896995
+fvalue = 10216736
+fvalue = 44075
+fvalue = 20
+fvalue = 0
+fvalue = 10216736,440.750000,0,80761, fcount = 16
+fvalue = 80761
+fvalue = 0
+fvalue = 44075
+fvalue = 0
+fvalue = 80761
+fvalue = 44249
+fvalue = 43960
+fvalue = 44995
+fvalue = 39670
+fvalue = 48480
+fvalue = 49970
+fvalue = 32325
+fvalue = 44995
+fvalue = 44915
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 10216736,440.750000,0,80761,
+len = 4fid  = 52 str = 1660
+len = 6fid  = 53 str = nse_cm
+len = 6fid  = 54 str = ITC-EQ
+SNAP count and all 25 38 sf|nse_cm|11483
+fvalue = 317598
+fvalue = 72253457
+fvalue = 1695911653
+fvalue = 1695896440
+fvalue = 4081102
+fvalue = 301000
+fvalue = 5
+fvalue = 4943
+fvalue = 4081102,3010.000000,4943,0, fcount = 16
+fvalue = 0
+fvalue = 301000
+fvalue = 0
+fvalue = 4943
+fvalue = 0
+fvalue = 302020
+fvalue = 297825
+fvalue = 305050
+fvalue = 270900
+fvalue = 331100
+fvalue = 305050
+fvalue = 179740
+fvalue = 298900
+fvalue = 296505
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 4081102,3010.000000,4943,0,
+len = 5fid  = 52 str = 11483
+len = 6fid  = 53 str = nse_cm
+len = 5fid  = 54 str = LT-EQ
+SNAP count and all 25 16 sf|nse_cm|1348
+fvalue = 191408
+fvalue = 72080588
+fvalue = 1695911480
+fvalue = 1695896931
+fvalue = 331995
+fvalue = 297000
+fvalue = 1
+fvalue = 0
+fvalue = 331995,2970.000000,0,517, fcount = 16
+fvalue = 517
+fvalue = 0
+fvalue = 297000
+fvalue = 0
+fvalue = 517
+fvalue = 298907
+fvalue = 296005
+fvalue = 301820
+fvalue = 267300
+fvalue = 326700
+fvalue = 324400
+fvalue = 224600
+fvalue = 300650
+fvalue = 300635
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 331995,2970.000000,0,517,
+len = 4fid  = 52 str = 1348
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = HEROMOTOCO-EQ
+SNAP count and all 25 29 sf|nse_cm|11723
+fvalue = 205434
+fvalue = 72076586
+fvalue = 1695911476
+fvalue = 1695896243
+fvalue = 3157286
+fvalue = 76810
+fvalue = 97
+fvalue = 5959
+fvalue = 3157286,768.100000,5959,0, fcount = 16
+fvalue = 0
+fvalue = 76810
+fvalue = 0
+fvalue = 5959
+fvalue = 0
+fvalue = 77400
+fvalue = 76435
+fvalue = 78740
+fvalue = 69130
+fvalue = 84490
+fvalue = 84000
+fvalue = 61420
+fvalue = 78070
+fvalue = 77960
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 3157286,768.100000,5959,0,
+len = 5fid  = 52 str = 11723
+len = 6fid  = 53 str = nse_cm
+len = 11fid  = 54 str = JSWSTEEL-EQ
+SNAP count and all 25 25 sf|nse_cm|1708
+fvalue = 10590
+fvalue = 78696182
+fvalue = 1695910190
+fvalue = 1695896521
+fvalue = 17437
+fvalue = 27370
+fvalue = 2
+fvalue = 180
+fvalue = 17437,273.700000,180,0, fcount = 16
+fvalue = 0
+fvalue = 27370
+fvalue = 0
+fvalue = 180
+fvalue = 0
+fvalue = 27320
+fvalue = 26795
+fvalue = 27500
+fvalue = 26005
+fvalue = 28735
+fvalue = 34390
+fvalue = 12805
+fvalue = 26795
+fvalue = 26735
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 17437,273.700000,180,0,
+len = 4fid  = 52 str = 1708
+len = 6fid  = 53 str = nse_cm
+len = 13fid  = 54 str = JAYBARMARU-EQ
+SNAP count and all 25 31 sf|nse_cm|11287
+fvalue = 156817
+fvalue = 72078587
+fvalue = 1695911478
+fvalue = 1695896513
+fvalue = 2158105
+fvalue = 60500
+fvalue = 1
+fvalue = 8742
+fvalue = 2158105,605.000000,8742,0, fcount = 16
+fvalue = 0
+fvalue = 60500
+fvalue = 0
+fvalue = 8742
+fvalue = 0
+fvalue = 61081
+fvalue = 60255
+fvalue = 61890
+fvalue = 54450
+fvalue = 66550
+fvalue = 80700
+fvalue = 57695
+fvalue = 61510
+fvalue = 61510
+fvalue = 18446744071562067968
+fvalue = 1
+fvalue = 2
+data = 2158105,605.000000,8742,0,
+len = 5fid  = 52 str = 11287
+len = 6fid  = 53 str = nse_cm
+len = 6fid  = 54 str = UPL-EQ
