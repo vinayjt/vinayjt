@@ -13,5 +13,5 @@ Get Involved
 Author
 ======
 Vinay Tiwari - vinayjt@gmail.com
-Copyrite : in case you are looking to replciate the server, feel free to download the code and 
+Copywrite : in case you are looking to replicate the server, feel free to download the code and 
 needhelp , send the email with subject:MD Kotak C++
